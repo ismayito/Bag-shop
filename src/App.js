@@ -5,6 +5,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from './styles/theme';
 import AppBar from './components/appbar';
 import Banner from './components/banner';
+import Promotions from './components/promotions';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       
       <AppBar></AppBar>
       <Banner></Banner>
+      <Promotions></Promotions>
       {/*
  appbar 
   promotions

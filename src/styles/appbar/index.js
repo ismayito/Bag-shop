@@ -17,7 +17,7 @@ export const Appheader=styled(Typography)(()=>({
     flexGrow:1,
     fontSize:"4em",
     fontFamily:'"montez","cursive',
-    color:Colors.secondary
+    color: Colors.secondary,
 }));
 
  export const MyList=styled(List)(({type})=>({

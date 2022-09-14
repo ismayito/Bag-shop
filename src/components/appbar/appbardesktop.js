@@ -8,7 +8,7 @@ export default function AppBarDesktop({matches}){
    
     return(
         <AppbarContainer>
-            <Appheader sx={{color:Colors.secondary}}>My Bags</Appheader>
+            <Appheader color={"#d1adcc"}>My Bags</Appheader>
             <MyList type= "row">
                 <ListItemText primary="Home"></ListItemText>
                 <ListItemText primary="Categories"></ListItemText>
