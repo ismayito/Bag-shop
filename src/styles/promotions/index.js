@@ -18,7 +18,7 @@ export const MessageDisplay=styled(Typography)(({theme})=>({
     fontFamily:'"Montez","cursive',
     color:Colors.white,
     fontSize:"1.5rem",
-    [theme.breakpoints.up("md")]:{
-        fontSize:"3rem"
+    [theme.breakpoints.down("md")]:{
+        fontSize:"3rem",
     }
 }))

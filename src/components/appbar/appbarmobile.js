@@ -10,7 +10,7 @@ import Actions from "./actions";
             <IconButton>
                 <MenuOutlinedIcon></MenuOutlinedIcon>
             </IconButton>
-            <Appheader variant="h4" textAlign={"center"}>My Bags</Appheader>
+            <Appheader variant="h4" textAlign={"center"} color={"#d1adcc"}>My Bags</Appheader>
             <IconButton>
             <SearchOutlinedIcon></SearchOutlinedIcon>
             </IconButton>

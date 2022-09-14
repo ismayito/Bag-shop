@@ -3,7 +3,7 @@ import { Box, Slide } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { MessageDisplay, PromotionsContainer } from "../../styles/promotions";
-import { useEffect, useState } from "react";
+import { useEffect, useState,useRef } from "react";
 
 const messages=[
     "20% discount on the first order",
@@ -14,6 +14,7 @@ export default function Promotions(){
     const theme=useTheme()
 
     const matches=useMediaQuery(theme.breakpoints.down("md"));
+    const containerRef=useRef();
     const [messageIndex,setMessageIndex]= useState(0);
     const [show, setShow]=useState(true);
 
@@ -36,13 +37,15 @@ export default function Promotions(){
     },[])
 
     return(
-        <PromotionsContainer>
+        <PromotionsContainer ref={containerRef}>
             <Slide
+            container={containerRef.current}
             direction={ show ? "left":"right"}
             in={show}
+            timeout={{enter:500,exit:100}}
             >
             <Box justifyContent={"center"} display={"flex"} alignItems={"center"}>
-                <MessageDisplay color={"white"}>
+                <MessageDisplay color={"white"} fontSize={{md:32,lg:32}}>
                     {messages[messageIndex]}
                 </MessageDisplay>
             </Box>

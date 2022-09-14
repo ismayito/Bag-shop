@@ -6,7 +6,7 @@ import AppBarMobile from "./appbarmobile";
 export default function  AppBar(){
     const theme=useTheme()
 
-    const matches=useMediaQuery(theme.breakpoints.down("md"));
+    const matches = useMediaQuery(theme.breakpoints.down("md"));
 
     return(
         <>
