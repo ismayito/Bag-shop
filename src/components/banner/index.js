@@ -1,7 +1,8 @@
-import { BannerContainer, BannerContent, BannerDescription, BannerImage, BannerTitle } from "../../styles/banner";
+import { BannerContainer, BannerContent, BannerDescription, BannerImage, BannerShopButton, BannerTitle } from "../../styles/banner";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Typography } from "@mui/material";
+import { Colors } from "../../styles/theme";
 
 export default function Banner(){
     const theme=useTheme()
@@ -22,6 +23,7 @@ export default function Banner(){
                     
                
                 </BannerDescription>
+                <BannerShopButton background="" color="primary">SHOP NOW</BannerShopButton>
             </BannerContent>
             
         </BannerContainer>

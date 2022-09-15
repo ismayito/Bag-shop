@@ -28,14 +28,10 @@ export default function SingleProductDesktop ({product, matches}){
             <ProductFavButton isFav={1}>
                     <FavoriteBorderOutlined ></FavoriteBorderOutlined> 
                 </ProductFavButton>
-                {showOptions &&( <ProductAddToCart variant="oulined"  show={showOptions}>  Add to cart</ProductAddToCart>)}
-            <ProductMeta product={product} matches={matches}></ProductMeta>
-
+                {showOptions &&( <ProductAddToCart variant="contained"  show={showOptions}>  Add to cart</ProductAddToCart>)}
             <ProductActionsWrapper show={showOptions} >
                 <Stack direction="column">
-                <ProductFavButton isFav={1}>
-                    <FavoriteBorderOutlined ></FavoriteBorderOutlined> 
-                </ProductFavButton>
+               
                 <ProductActionButton>
                 <ShareOutlinedIcon></ShareOutlinedIcon>
                 </ProductActionButton>
@@ -44,11 +40,8 @@ export default function SingleProductDesktop ({product, matches}){
                 </ProductActionButton>
                 </Stack>
             </ProductActionsWrapper>
-           
-       
-            
-            
         </Product>
+        <ProductMeta product={product} matches={matches}></ProductMeta>
         
     </>
        

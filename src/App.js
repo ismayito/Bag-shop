@@ -7,6 +7,8 @@ import AppBar from './components/appbar';
 import Banner from './components/banner';
 import Promotions from './components/promotions';
 import Products from './components/products';
+import { FolderOffSharp } from '@mui/icons-material';
+import Footer from './components/foooter';
 
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
         <Typography variant="h4" padding={"4px"} display="flex" alignItems="center" justifyContent={"center"}> Our Products</Typography>
       </div>
       <Products></Products>
+      <Footer></Footer>
+      
       {/*
  appbar 
   promotions
