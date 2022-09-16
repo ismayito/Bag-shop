@@ -16,7 +16,7 @@ import SearchBox from './components/search';
 
 function App() {
   useEffect(() => {
-    document.title="material ui --Home"
+    document.title="E-bag shop"
   
    
   }, [])

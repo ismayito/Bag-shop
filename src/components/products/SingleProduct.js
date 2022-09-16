@@ -8,10 +8,11 @@ import ProductMeta from "./ProductMeta"
 
 
 
+
 export default function SingleProduct ({product, matches}){
     
 
-
+   
 
     return (
     <>
@@ -24,7 +25,7 @@ export default function SingleProduct ({product, matches}){
            
             <ProductActionsWrapper >
                 <Stack direction="row">
-                <ProductFavButton isFav={1}>
+                <ProductFavButton isfav={1}>
                     <FavoriteBorderOutlined ></FavoriteBorderOutlined> 
                 </ProductFavButton>
                 <ProductActionButton>
@@ -36,6 +37,7 @@ export default function SingleProduct ({product, matches}){
                 </Stack>
             </ProductActionsWrapper>
             <ProductAddToCart > Add to cart</ProductAddToCart>
+            
         </Product>
         
         </>

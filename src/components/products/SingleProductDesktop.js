@@ -25,7 +25,7 @@ export default function SingleProductDesktop ({product, matches}){
   
      <Product onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >
             <ProductImage src={product.image}></ProductImage>
-            <ProductFavButton isFav={1}>
+            <ProductFavButton isfav={1}>
                     <FavoriteBorderOutlined ></FavoriteBorderOutlined> 
                 </ProductFavButton>
                 {showOptions &&( <ProductAddToCart variant="contained"  show={showOptions}>  Add to cart</ProductAddToCart>)}
