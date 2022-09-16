@@ -15,5 +15,8 @@ export const FooterTitle=styled(Typography)(()=>({
     ".MuiInput-root":{
         borderBottom:`1px solid ${Colors.secondary}`
     },
+    ".css-1x51dt5-MuiInputBase-input-MuiInput-input":{
+        color:Colors.white,
+    },
     fontSize:{sx:"12px", md:"16px", lg:"16px"}
  }))

@@ -38,7 +38,7 @@ import SendIcon from '@mui/icons-material/Send';
             <FooterTitle variant="body1">information</FooterTitle>
             <List>
                 <ListItemText><Typography lineHeight={2} variant="caption2"> about us</Typography></ListItemText>
-                <ListItemText><Typography lineHeight={2} variant="caption2"> about us</Typography></ListItemText>
+                <ListItemText><Typography lineHeight={2} variant="caption2"> contact us us</Typography></ListItemText>
                 <ListItemText><Typography lineHeight={2} variant="caption2"> Privacy &amp;policy us</Typography></ListItemText>
                 <ListItemText><Typography lineHeight={2} variant="caption2"> Terms &amp; conditions</Typography></ListItemText>
             </List>
@@ -54,19 +54,11 @@ import SendIcon from '@mui/icons-material/Send';
             </List>
             
         </Grid>
-        <Grid item md={6} lg={2}>
-            <FooterTitle variant="body1">information</FooterTitle>
-            <List>
-                <ListItemText><Typography lineHeight={2} variant="caption2"> about us</Typography></ListItemText>
-                <ListItemText><Typography lineHeight={2} variant="caption2"> about us</Typography></ListItemText>
-                <ListItemText><Typography lineHeight={2} variant="caption2"> Privacy &amp; policy us</Typography></ListItemText>
-                <ListItemText><Typography lineHeight={2} variant="caption2"> Terms &amp; conditions</Typography></ListItemText>
-            </List>
-        </Grid>
+        
         <Grid item md={6} lg={4}>
             <FooterTitle variant="body1">newsletter</FooterTitle>
            <Stack>
-            <SubscribeTf color="primary" variant="standard"  label="Enter email"></SubscribeTf>
+            <SubscribeTf sx={{color:Colors.white}} variant="standard"  label="Enter email"></SubscribeTf>
             <Button  variant="contained"
                sx={{ mt:4, mb:4,}}
                startIcon = {<SendIcon sx={{color:Colors.white}}></SendIcon>}

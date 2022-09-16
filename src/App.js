@@ -9,6 +9,9 @@ import Promotions from './components/promotions';
 import Products from './components/products';
 import { FolderOffSharp } from '@mui/icons-material';
 import Footer from './components/foooter';
+import AppDrawer from './components/AppDrawer';
+import { UIprovider } from './context/contexUI';
+import SearchBox from './components/search';
 
 
 function App() {
@@ -21,7 +24,7 @@ function App() {
   return (
     <ThemeProvider theme = {theme}>
  <Container maxWidth="xl" sx={{backgroundColor:"#fff"}}>
-      
+  <UIprovider>
       <AppBar></AppBar>
       <Banner></Banner>
       <Promotions></Promotions>
@@ -30,7 +33,11 @@ function App() {
       </div>
       <Products></Products>
       <Footer></Footer>
+      <AppDrawer></AppDrawer>
+      <SearchBox></SearchBox>
+  </UIprovider>
       
+    
       {/*
  appbar 
   promotions

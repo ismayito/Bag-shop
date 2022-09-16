@@ -1,5 +1,5 @@
 import { styled } from "@mui/material/styles";
-import { Typography,List } from "@mui/material";
+import { Typography,List, IconButton } from "@mui/material";
 import Box from '@mui/material/Box';
 import Colors from "../theme";
 import "@fontsource/montez"
@@ -42,3 +42,9 @@ export const Appheader=styled(Typography)(()=>({
     flexGrow:0,
  }));
  
+export const DrawerButtonClose=styled(IconButton)(()=>({
+    position: "absolute",
+    zIndex:1999,
+    left:"250px",
+    top:10,
+}))
